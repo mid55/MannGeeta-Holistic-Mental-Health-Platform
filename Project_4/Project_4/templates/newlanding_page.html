@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Geologica:wght@600&family=Josefin+Sans:wght@100&family=Vollkorn&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap'); </style>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      body{
+  margin: 0;
+  background-color: #0c10ea;
+  background-image: linear-gradient(90deg, #0c10ea 0%, #000cff 100%);
+
+}
+
+.about{
+  text-align: center;
+  color: "white";
+  padding-top: 40px;
+}
+
+  .container1{
+    background-color: #08ddee;
+background-image: linear-gradient(90deg, #08ddee 0%, #21086a 50%, #10096a 100%);
+border-radius: 1.5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open Sans',sans-serif;
+}
+
+.container {
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+ column-gap: 1rem;
+}
+
+.image {
+  max-width: 400rem;
+  max-height:500rem;
+}
+
+.text {
+  font-size: 3rem;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+h1{
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.navbar-brand{
+  padding-left: 2rem;
+
+}
+.ms-auto{
+  margin-left: 30rem;
+}
+.nav-item{
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: 1.1rem;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.start_btn{
+  width: 15rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin:5rem 1rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 0.2rem solid #0E2954;
+  background: #0E2954;
+  color:#fff;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.start_btn:hover{
+  background: transparent;
+  border: 0.2rem solid #fff;
+}
+
+.conatiner2{
+  background-color: #07082d;
+background-image: linear-gradient(90deg, #07082d 0%, #0e1462 100%);
+
+  height: 40rem;
+}
+
+.samadhan-logo{
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: center;
+  padding-left: 17rem;
+}
+.samadhan-text{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 2rem;
+  color: #fff;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.container3{
+  background-color: #07082d;
+  height: 70rem;
+  background-image: linear-gradient(90deg, #07082d 0%, #0e1462 100%);
+
+}
+ .animate-character{
+   color: white;
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+ }
+
+ .carousel-item1{
+   display: flex;
+   color: white;
+   padding-top: 2rem;
+ }
+ .carousel-item1{
+   background-color: #64d1fb;
+background-image: linear-gradient(135deg, #64d1fb 0%, #011fb9 100%);
+border: 3px solid;
+border-color: #8381b8;
+margin: 0 3rem;
+height: 27rem;
+border-radius: 1.5rem;
+margin-top: 4rem;
+ }
+ .carousel-item2{
+   display: flex;
+   color: white;
+   background-color: #64d1fb;
+   background-image: linear-gradient(135deg, #64d1fb 0%, #011fb9 100%);
+ border: 3px solid;
+  border-color: #8381b8;
+ margin: 0 3rem;
+ height: 23rem;
+ border-radius: 1.5rem;
+ margin-top: 4rem;
+ }
+ .image-1{
+   margin-left: 2rem;
+    padding-top: 2rem;
+ }
+ .idea-text{
+   margin-left: 2rem;
+    /* margin-right: 10rem; */
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    margin: ;
+    font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+
+ }
+ .text-2{
+   margin-top: 5rem;
+   color: white;
+ }
+
+ .contactus{
+     min-height: 40rem;
+     /* background: #08071d; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #21D4FD;
+ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+     height: 40rem;
+     z-index: -1;
+ }
+
+
+ @keyframes gradient {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+
+
+form{
+    width: 50rem;
+    height: 30rem;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 2rem 2rem 5rem rgba(0,0,0,0.5);
+    border-radius: 1.5rem;
+    background: rgba(255,255,255,0.1);
+    background-color: fade(white,50%);
+    backdrop-filter: blur(10rem);
+    flex-wrap: wrap;
+}
+
+form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 2rem;
+    width: 40rem;
+    text-align: center;
+}
+
+form input{
+    width: 20rem;
+    height: 4rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: none;
+    border-bottom: 0.2rem solid #fff;
+}
+
+form input::placeholder{
+    color: #ddd;
+}
+
+ form #lastName,
+form #mobile{
+    margin-left: 2rem;
+}
+
+ form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 47rem;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+}
+
+form textarea{
+    background: none;
+    border: none;
+    border-bottom: 0.2rem solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    min-width: 45rem;
+    max-width: 60rem;
+    min-height: 4rem;
+    max-height: 8rem;
+}
+
+textarea::-webkit-scrollbar{
+    width: 0.1rem;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+form #button{
+  border: none;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #333;
+    width: 5rem;
+    padding: 0rem 1rem;
+    margin-right: 35rem;
+    margin-bottom: 8rem;
+    transition: 0.3s;
+    height: 3rem;
+}
+
+form #button:hover{
+    opacity: 0.7;
+}
+form .contact{
+  font-size: 2rem;
+}
+
+@media(max-width:998px) {
+  html{
+    font-size: 55%;
+  }
+}
+
+@media(max-width:768px) {
+  html{
+    font-size: 45%;
+  }
+}
+
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='newlpage.css') }}">
+  </head>
+  <body>
+<section id="home">
+  <div class="container1">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">
+            <!-- <img src="logo.png" height="100px" width="125px" alt=""> -->
+            <img src="{{ url_for('static', filename='logo.png') }}" height="100px" width="125px" alt="My Image">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#samadhan">About</a></li>
+                  <li class="nav-item">
+                    <button class="btn"><a  class="nav-link" href="{{url_for('quiz')}}">Quiz</a></button>
+                      <li class="nav-item">
+                        <button class="btn"><a  class="nav-link" href="{{url_for('depression')}}">EmoCheck</a></button>
+                          <!-- <a class="nav-link" href="#idea">EmoCheck</a></li> -->
+                  <li class="nav-item">
+                      <button class="btn"><a  class="nav-link" href="{{url_for('education')}}">Education</a></button>
+                  <li class="nav-item">
+                    <button class="btn"><a  class="nav-link" href="{{url_for('subscription')}}">Subscription</a></button>
+              </ul>
+          </div>
+      </nav>
+  <div class="container">
+  <div class="text">
+    <h1>Introducing  <br><span class="auto-type"></span></br></h1>
+    <p style="font-size:1.5rem;">Man Geeta  aims to enhance overall personality by integrating mental, emotional, physical, and spiritual dimensions through holistic practices and community support.</p>
+ <button type="button" name="button" class="start_btn" onclick="window.location.href = 'index.html';">Get Started</button>
+  </div>
+  <div class="image">
+  <img src="{{ url_for('static', filename='bg.jpg') }}" alt="My Image">
+  </div>
+  </div>
+  </div>
+</section>
+
+<section id="samadhan">
+  <div class="conatiner2" >
+
+  <div class="text1" data-aos="slide-up"  >
+    <h1 class="about" style="color:white"> About </h1>
+    <p style="color:white" class="samadhan-text lineUp"> <b><i>मनGeeta</i></b>  is dedicated to enhance the overall personality of individuals. Its mission revolves around empowering individuals to cultivate not just mental health, but a more comprehensive sense of well-being and self-development. This entails integrating various aspects of one's being, including mental, emotional, physical, and spiritual dimensions.
+<b><i>मनGeeta</i></b> draws  upon insights from psychology, philosophy, and spirituality to provide a holistic approach to personality development. It may encourage individuals to explore their values, beliefs, and life purpose, guiding them on a journey of self-discovery and self-actualization.
+<b><i>मनGeeta</i></b> is  more than just a mental health platform; it aspires to be a catalyst for holistic personal growth, equipping individuals with the knowledge, skills, and support they need to thrive in all aspects of their lives.</p>
+
+  </div>
+
+  </div>
+</section>
+
+
+<!-- Idea section ends here  -->
+
+
+<!-- contact us section starts here  -->
+<section id="contact" class="contactus">
+
+
+      <form>
+          <h1 class="contact">Contact Us Form</h1>
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="text" id="mobile" placeholder="Mobile" required>
+          <h4>Type Your Message Here...</h4>
+          <textarea required></textarea>
+          <input type="submit" value="Send" id="button">
+      </form>
+
+
+</section>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init({
+         offset: 300,
+         duration: 1000,
+     });
+     </script>
+
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed(".auto-type",{strings:["मनGeeta"],
+    typeSpeed:160,
+    backSpeed:160,
+    loop:true})
+
+    </script>
+    <script>
+window.embeddedChatbotConfig = {
+chatbotId: "Nhf2GeZj3vscUyumHIh3n",
+domain: "www.chatbase.co"
+}
+</script>
+<script>
+window.embeddedChatbotConfig = {
+chatbotId: "EzBrtvLkY1oosdXGkGIM4",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="EzBrtvLkY1oosdXGkGIM4"
+domain="www.chatbase.co"
+defer>
+</script>
+  </body>
+</html>

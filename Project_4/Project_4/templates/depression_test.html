@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>sms</title>
+    <style>
+        body, html {
+            height: 100%;
+            background-color: rgb(16, 204, 233);
+        }
+
+        .bg-image {
+            /* The image used */
+            background-color: #0c10ea;
+  background-image: linear-gradient(90deg, #0c10ea 0%, #000cff 100%);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .inner{
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        textarea{
+            resize: none;
+            height: 200px;
+            background-color: rgb(16, 204, 233);
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            text-align: left;
+        }
+
+        .btn{
+            height: 50px;
+            width: 100%;
+            max-width: 200px;
+            margin-top: 20px;
+            background-color: #096ae9;
+            border: 2px solid #096ae9;
+            color: #fff;
+            border-radius: 50px;
+            transition-property: all;
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 100px;
+        }
+
+        .btn:hover{
+            background: transparent;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            border: 2px solid #fff;
+        }
+
+        .btn:active{
+            color: #fff;
+        }
+
+        h1{
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .text {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: fixed;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 40%;
+            padding: 20px;
+            text-align: left;
+            resize: both;
+            overflow: auto;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #1{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn1 {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            z-index: 2;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .inner {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            textarea, .btn {
+                width: 100%;
+                max-width: none;
+                margin-left: 0; /* Adjust margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image">
+        <button class="btn1" onclick="window.location.href='/'"><i class="fa fa-home"></i></button>
+    </div>
+    <div class="inner">
+        <h1><u>Presenting EMOCHECK</u> &#128522;</h1>
+        <form action="/predict_depression" method="post" id="1">
+            <div class="content">
+                <textarea name="feedback" placeholder="write about your (day or incident affected you very much) here..." rows="10" columns="300"></textarea>
+                <button class="btn" type="submit">Predict</button>
+            </div>
+        </form>
+        <div class="text">
+            <h2>Prediction: {{ result }}</h2>
+            
+        </div>
+    </div>
+</body>
+</html>

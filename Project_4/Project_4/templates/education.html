@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='education.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    /* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #b1744b;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.text-container1 {
+  position: relative;
+  top: 12%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  text-align: center;
+  padding: 10px;
+}
+.text-container2 {
+  position: relative;
+  top: 8%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  text-align: center;
+  padding: 10px;
+}
+.text-container3 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px; /* Adjust max-width as needed */
+  text-align: center;
+  padding: 10px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  </style>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="nav-items"><a href="newlanding_page.html">Home</a></li>
+      </ul>
+
+    </nav>
+
+    <main>
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <!-- <img src="img1.jpeg" width="400" height="500" /> -->
+          <img src="{{ url_for('static', filename='img1.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container1">
+            <div class="text">
+              <h2>KRSNA DESIRES OUR GROWTH</h2>
+              <br />
+              <p>
+                <i
+                  >"I feel the limbs of my body quivering and my mouth drying
+                  up. My whole body is trembling, my hair is standing on end, my
+                  bow Gāṇḍīva is slipping from my hand, and my skin is burning.
+                  I am now unable to stand here any longer. I am forgetting
+                  myself, and my mind is reeling. I see only causes of
+                  misfortune, O Kṛṣṇa, killer of the Keśī demon."</i
+                >
+              </p>
+              <p>
+                Arjuna describes his moment of weakness right before the
+                commencement of the great Kuru war, that is leading him to
+                despair and depression. Krsna however, after patiently hearing
+                Arjuna out, helps him shift perspective and see things in a
+                newer and fresher light — a more holistic outlook.
+              </p>
+              <p>
+                Happiness and distress are destined for everybody! If you’re
+                happy today, be assured that distress will follow, and if you’re
+                under the weather today, then be assured that the sun will rise
+                tomorrow. This world is a place of duality, and the dualities
+                will come and go. We must learn to tolerate and eventually
+                transcend, like Arjuna did! It is important that we’re taught
+                the philosophy of the Bhagavad Gita. It is most beautiful,
+                revealing and enlightening. It takes away all pain, anxiety and
+                fear! STRENGTH!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="{{ url_for('static', filename='img2.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container2">
+            <div class="text">
+              <h2>THIS TOO SHALL PASS : IMPERMANENCE OF THIS WORLD</h2>
+              <br />
+              <p>
+                <i
+                  >"The material body of the indestructible, immeasurable and
+                  eternal living entity is sure to come to an end; therefore,
+                  fight, O descendant of Bharata."</i
+                >
+              </p>
+              <p>
+                Krsna wants us to stay in this world for whatever time is
+                allotted to us and fight! Don’t give up! We must do our assigned
+                duty! The body is temporary and so are the pains and pleasures
+                that come along with it. Don’t be too attached to them. Don’t
+                fall for the trap or illusion of comfort. Nothing is permanent
+                in this world. Everything comes and goes like the seasons in a
+                year …
+              </p>
+              <p>
+                Krsna describes this world as duḥkhālayam aśāśvatam — temporary
+                and filled with miseries, and so to harbour aspirations to enjoy
+                this world and live comfortably forever, is really missing the
+                point! When we falsely think that we shall never die, and that
+                name, fame, money, power, etc. are the only sources of
+                happiness, things can get a WHOLE LOT UNBEARABLE!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="{{ url_for('static', filename='img3.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container2">
+            <div class="text">
+              <h2>WE ARE NOT THE BODY, WE ARE A SPIRIT SOUL</h2>
+              <br />
+              <p>
+                <i
+                  >"Never was there a time when I did not exist, nor you, nor
+                  all these kings; nor in the future shall any of us cease to
+                  be."</i
+                >
+              </p>
+              <p>
+                <i
+                  >"The soul can never be cut to pieces by any weapon, nor
+                  burned by fire, nor moistened by water, nor withered by the
+                  wind. This individual soul is unbreakable and insoluble, and
+                  can be neither burned nor dried. He is everlasting, present
+                  everywhere, unchangeable, immovable and eternally the
+                  same."</i
+                >
+              </p>
+              <br />
+              <p>
+                So important is knowing our identity as the soul for our eternal
+                well-being, that the great Kuru minister Vidura instructed
+                Dhritarashtra in the higher principles of the scriptures.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="{{ url_for('static', filename='img6.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container2">
+            <div class="text">
+              <h2>FRAMEWORK FOR ACHIEVING THE PINNACLE OF ALL PINNACLES</h2>
+              <br />
+              <p>
+                So as Krsna desires and other great spiritualists and devotees
+                of the Lord confirm, we must learn about the soul and seek
+                ourselves. It is very important — as knowledge of ourselves as
+                spiritual beings sets the groundwork on which we can continue to
+                develop spiritually, pursuing and reestablishing our lost
+                connection with Krsna Himself, the Supersoul!
+              </p>
+              <p>
+                <i
+                  >"After attaining Me, the great souls, who are yogīs in
+                  devotion, never return to this temporary world, which is full
+                  of miseries, because they have attained the highest
+                  perfection."</i
+                >
+              </p>
+              <br />
+              <p>
+                This highest perfection is pure bliss, or happiness in all its
+                glory. It is what we constantly and ever-increasingly experience
+                when we meet the Lord face-to-face. Isn’t this what we all seek?
+                To be eternally, infinitely and ever-increasingly happy?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="{{ url_for('static', filename='img5.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container2">
+            <div class="text">
+              <h2>NOT YOUR BODY!</h2>
+              <br />
+              <p>
+                You know suicide is never an option! <br />
+
+                This body is not yours! It is given to you for a reason. And
+                everything that comes along with the body must be taken in
+                stride and dealt with accordingly. When Krsna asks us to
+                tolerate pains and pleasures, He wants us to transcend material
+                reality, and be situated in the spirit.
+                <br />
+                <b
+                  >"If we’re not dead, we’re only getting stronger! Believe!
+                  That’s what Krsna wants us to do!"</b
+                >
+              </p>
+              <br />
+              <p>
+                When Arjuna decided to give up fighting and retire to the
+                forest, Krsna reproved Arjuna, and incited him to use his
+                abilities for the Lord’s pleasure and not his own. Arjuna’s body
+                was not his own property, but an instrument of the Lord, who
+                wanted to do great things through Arjuna!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="{{ url_for('static', filename='img7.jpeg') }}" height="500px" width="400px" alt="My Image">
+          <div class="text-container3">
+            <div class="text">
+              <h2>HEART OF A DEVOTEE : REVERSALS AND UPHEAVALS</h2>
+              <p>
+                A devotee of the Lord — a transcendentalist always sees
+                reversals and misfortune in life as the blessings of the Lord.
+                In fact, it is the special mercy of the Lord that all our
+                so-called friends, society, attachments, wealth, etc. wither
+                away. When advanced devotees find themselves at the threshold of
+                great loss and sufferings, they rejoice, for they know it is the
+                special mercy of the Lord. Devotees take reversals as a signal
+                to strengthen their meditation on the Lord, and deepen their
+                relationship with Him. No more worldly distractions!<br />
+                <b
+                  >Devotees of the Lord are fearless! Absolutely fearless
+                  beings!</b
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </main>
+
+  </body>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+  </script>
+  <script>
+    window.embeddedChatbotConfig = {
+      chatbotId: "Nhf2GeZj3vscUyumHIh3n",
+      domain: "www.chatbase.co",
+    };
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="Nhf2GeZj3vscUyumHIh3n"
+    domain="www.chatbase.co"
+    defer
+  ></script>
+</html>
