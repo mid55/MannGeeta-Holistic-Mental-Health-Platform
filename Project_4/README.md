@@ -1,5 +1,3 @@
-# Project_4
-
 
 # मनGeeta: Holistic Mental Health Platform
 
